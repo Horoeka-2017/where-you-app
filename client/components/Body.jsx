@@ -3,20 +3,97 @@ import React, { Component } from 'react'
 import Body from './Body'
 
 class Body extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = {
-      playerScore: 0,
-      apiData: {}
+      questions: [
+
+        {
+          id: 1, question: 'Which region is the Philippines located?',
+          answers: {
+            id: '', answer1: '', answer2: '', answer3: ''
+          }
+        },
+
+        {
+          id: 2, question: 'What is the capital city of the Philippines?',
+          answers:
+          {
+            id: '', answer1: '', answer2: '', answer3: ''
+          }
+        },
+
+        {
+          id: 3, question: 'What languages are spoken in the Philippines?',
+          answers:
+          {
+            id: '', answer1: '', answer2: '', answer3: ''
+          }
+        },
+
+        {
+          id: 4, question: 'What currency is used in the Philippines?',
+          answers:
+          {
+            id: '', answer1: '', answer2: '', answer3: ''
+          }
+        },
+
+        {
+          id: 5, question: 'What is the latitude and longitude for the Philippines?',
+          answers:
+          {
+            id: '', answer1: '', answer2: '', answer3: ''
+          }
+        },
+
+        {
+          id: 6, question: 'What are the people of the Philippines also referenced as?',
+          answers:
+          {
+            id: '', answer1: '', answer2: '', answer3: ''
+          }
+        },
+
+        {
+          id: 7, question: 'What is the sub-region in which the Philippines is located?',
+          answers:
+          {
+            id: '', answer1: '', answer2: '', answer3: ''
+          }
+        },
+
+        {
+          id: 8, question: 'What is the calling code for the Philippines?',
+          answers:
+          {
+            id: '', answer1: '', answer2: '', answer3: ''
+          }
+        },
+
+        {
+          id: 9, question: 'How does one say the Philippines in German?',
+          answers:
+          {
+            id: '', answer1: '', answer2: '', answer3: ''
+          }
+        },
+
+        {
+          id: 10, question: 'What do they put on the end of their URL?',
+          answers:
+          {
+            id: '', answer1: '', answer2: '', answer3: ''
+          }
+        }]
+    }
+
+    render() {
+      return (
+        <div>
+        </div>
+      )
     }
   }
 
-  render () {
-    return (
-      <div>
-      </div>
-    )
-  }
-}
-
-export default Body
+  export default Body
