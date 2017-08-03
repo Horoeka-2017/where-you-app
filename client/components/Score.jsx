@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 class Score extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = {
       playerScore: 0,
@@ -9,9 +9,9 @@ class Score extends Component {
     }
   }
 
-  render () {
+  render() {
     return (
-      <div>
+      <div className='score-bar'>
       </div>
     )
   }
