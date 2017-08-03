@@ -1,12 +1,27 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-const App = () => {
-  return (
-    <div>
-      <div className=''>
-        <h1>Where You App, Team JENJ?</h1>
+import Header from './Header'
+import Body from './Body'
+import Score from './Score'
+
+class App extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      playerScore: 0,
+      apiData: {}
+    }
+  }
+
+  render () {
+    return (
+      <div>
+        <Header />
+        <Body />
+        <Score />
       </div>
-      )
+    )
+  }
 }
 
 export default App
