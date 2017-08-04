@@ -1,19 +1,13 @@
-body {
-  font-family: sans-serif;
-  /* background-image: url("world-map-700.png") */
-}
 
-h1 {
+ h1 {
   font-family: 'Lobster Two', cursive;
   font-size: 60px;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
-  /* background-color: black */
-}
+ } 
 
-.body {
+body {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,4 +22,9 @@ h1 {
 .answers {
   font-style: italic;
   font-weight: lighter
+}  
+.header{
+  display: flex;
+
 }
+.img-class{}

@@ -41,7 +41,7 @@ class App extends Component {
         'isoNumericCode': '608'
       }
     }
-    this.incrementScore = this.incrementScore.bind(this)
+    // this.incrementScore = this.incrementScore.bind(this)
   }
 
   getRandomCountryData (err, apiData) {
@@ -53,7 +53,7 @@ class App extends Component {
   render () {
     return (
       <div className='content'>
-        <h1>Where You App?!</h1>
+        <Header />
         <Body country={this.state.apiData} />
         <Score score={this.state.playerScore} />
       </div>
