@@ -51,8 +51,8 @@ class App extends Component {
 
   render () {
     return (
-      <div>
-        <Header />
+      <div className='content'>
+        <h1>Where You App?!</h1>
         <Body country={this.state.apiData} />
         <Score score={this.state.playerScore} />
       </div>

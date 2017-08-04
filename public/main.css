@@ -1,4 +1,31 @@
-*{}
-.header{}
-.score-bar{}
+body {
+  font-family: sans-serif;
+  /* background-image: url("world-map-700.png") */
+}
 
+h1 {
+  font-family: 'Lobster Two', cursive;
+  font-size: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: black */
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.question {
+  font-weight: bold
+}
+
+.answers {
+  font-style: italic;
+  font-weight: lighter
+}
