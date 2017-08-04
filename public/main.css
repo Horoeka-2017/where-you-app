@@ -1,4 +1,10 @@
 *{}
 .header{}
 .score-bar{}
+.question{}
+
+.button-container{
+  display: flex;
+  flex-direction: ltr;
+}
 

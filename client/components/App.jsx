@@ -5,7 +5,7 @@ import Body from './Body'
 import Score from './Score'
 
 class App extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {
       playerScore: 0,
@@ -37,11 +37,23 @@ class App extends Component {
         'alpha2Code': 'PH',
         'alpha3Code': 'PHL',
         'isoNumericCode': '608'
-      }
+      },
+      questionCorrectAnswer: [
+        { a: false, b: false, c: false, d: false },
+        { a: false, b: false, c: false, d: false },
+        { a: false, b: false, c: false, d: false },
+        { a: false, b: false, c: false, d: false },
+        { a: false, b: false, c: false, d: false },
+        { a: false, b: false, c: false, d: false },
+        { a: false, b: false, c: false, d: false },
+        { a: false, b: false, c: false, d: false },
+        { a: false, b: false, c: false, d: false },
+        { a: false, b: false, c: false, d: false }
+      ]
     }
   }
 
-  render() {
+  render () {
     return (
       <div>
         <Header />
