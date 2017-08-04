@@ -5,7 +5,7 @@ import Body from './Body'
 import Score from './Score'
 
 class App extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {
       playerScore: 0,
@@ -41,17 +41,20 @@ class App extends Component {
     }
     this.incrementScore = this.incrementScore.bind(this)
   }
-this.incrementScore = () => { }
 
-render() {
-  return (
-    <div>
-      <Header />
-      <Body country={this.state.apiData} />
-      <Score score={this.state.playerScore} />
-    </div>
-  )
-}
+  incrementScore () {
+    return (console.log('shitson'))
+  }
+
+  render () {
+    return (
+      <div>
+        <Header />
+        <Body country={this.state.apiData} />
+        <Score score={this.state.playerScore} />
+      </div>
+    )
+  }
 }
 
 export default App
