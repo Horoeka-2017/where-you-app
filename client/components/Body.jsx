@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 
-import Body from './Body'
-
 class Body extends Component {
   constructor (props) {
     super(props)
