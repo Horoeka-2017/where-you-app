@@ -39,17 +39,19 @@ class App extends Component {
         'isoNumericCode': '608'
       }
     }
+    this.incrementScore = this.incrementScore.bind(this)
   }
+this.incrementScore = () => { }
 
-  render() {
-    return (
-      <div>
-        <Header />
-        <Body country={this.state.apiData} />
-        <Score score={this.state.playerScore} />
-      </div>
-    )
-  }
+render() {
+  return (
+    <div>
+      <Header />
+      <Body country={this.state.apiData} />
+      <Score score={this.state.playerScore} />
+    </div>
+  )
+}
 }
 
 export default App
