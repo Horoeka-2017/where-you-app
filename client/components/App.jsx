@@ -4,8 +4,10 @@ import Header from './Header'
 import Body from './Body'
 import Score from './Score'
 
+import getRandomCountryData from '../Api.jsx'
+
 class App extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {
       playerScore: 0,
@@ -41,7 +43,13 @@ class App extends Component {
     }
   }
 
-  render() {
+  getRandomCountryData (err, apiData) {
+    if (!err) {
+      this.setState({ 'question': apiData.value })
+    } else (console.log('data not recieved'))
+  }
+
+  render () {
     return (
       <div>
         <Header />
