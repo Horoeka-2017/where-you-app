@@ -4,6 +4,8 @@ import Header from './Header'
 import Body from './Body'
 import Score from './Score'
 
+import getRandomCountryData from '../Api.jsx'
+
 class App extends Component {
   constructor (props) {
     super(props)
@@ -42,14 +44,16 @@ class App extends Component {
     this.incrementScore = this.incrementScore.bind(this)
   }
 
-  incrementScore () {
-    return (console.log('shitson'))
+  getRandomCountryData (err, apiData) {
+    if (!err) {
+      this.setState({ 'question': apiData.value })
+    } else (console.log('data not recieved'))
   }
 
   render () {
     return (
-      <div>
-        <Header />
+      <div className='content'>
+        <h1>Where You App?!</h1>
         <Body country={this.state.apiData} />
         <Score score={this.state.playerScore} />
       </div>
