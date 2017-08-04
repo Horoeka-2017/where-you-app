@@ -7,7 +7,7 @@ import Score from './Score'
 import getRandomCountryData from '../Api.jsx'
 
 class App extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = {
       playerScore: 0,
@@ -43,13 +43,13 @@ class App extends Component {
     }
   }
 
-  getRandomCountryData (err, apiData) {
+  getRandomCountryData(err, apiData) {
     if (!err) {
       this.setState({ 'question': apiData.value })
     } else (console.log('data not recieved'))
   }
 
-  render () {
+  render() {
     return (
       <div className='content'>
         <h1>Where You App?!</h1>
