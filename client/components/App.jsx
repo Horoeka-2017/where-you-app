@@ -5,7 +5,7 @@ import Body from './Body'
 import Score from './Score'
 
 class App extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = {
       playerScore: 0,
@@ -41,11 +41,11 @@ class App extends Component {
     }
   }
 
-  render () {
+  render() {
     return (
       <div>
         <Header />
-        <Body />
+        <Body country={this.state.apiData} />
         <Score score={this.state.playerScore} />
       </div>
     )
