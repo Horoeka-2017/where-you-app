@@ -1,20 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class Score extends Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      playerScore: 0,
-      apiData: {}
-    }
-  }
-
-  render () {
-    return (
-      <div>
+const Score = (props) => {
+  return (
+    <div>
+      <div className='score-bar'>
+        Your Current Score Is {props.Score}
       </div>
-    )
-  }
+    </div>
+  )
 }
 
 export default Score

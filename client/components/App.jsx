@@ -46,7 +46,7 @@ class App extends Component {
       <div>
         <Header />
         <Body />
-        <Score />
+        <Score score={this.state.playerScore} />
       </div>
     )
   }
